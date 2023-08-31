@@ -13,7 +13,6 @@ body {
     position: relative;
     width: 100%;
     height: 400px;
-    overflow: hidden;
 }
 
 .slider-container article {
@@ -27,6 +26,10 @@ body {
     background-size: cover;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
 }
   
 .slider-container article.active {
@@ -34,10 +37,7 @@ body {
 }
   
 .slider-container article .caption {
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
+    transform: translateY(-1rem);
     background-color: rgba(255, 255, 255, 0.75);
     color: black;
     padding: 1rem 5rem;

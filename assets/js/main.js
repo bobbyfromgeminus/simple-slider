@@ -16,8 +16,6 @@ function showSlide() {
   slides[prev].classList.remove('active'); // Előző kép inaktív
   slides[curr].classList.add('active'); // Új kép aktív
 
-  console.log(curr, prev);
-
   curr++;
 
 }
